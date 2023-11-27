@@ -86,54 +86,44 @@
 
       <!-- Main -->
       <main class="main-container">
-        <div class="car_options g-bg-color--something g-font-family--secondary" id="Cars">
-            <h3 class="display-3" style="padding: 0.5em;">Įmomės automobiliai</h3>
-        <div class="slide_car">
-            <div class="slide slide-left">
-                <div class="slide-content">
-                    <a href="/carsInfo.html" target="_self"><button type="button" class="s-btn--scooter-bg">Peržiūrėti</button></a>
-                </div>
-                <img class="car_slide" src="images/car1.jpeg" alt="Car1">
-            </div>
-            <div class="slide slide-top">
-                <div class="slide-content">
-                    <a href="#"><button type="button" class="s-btn--scooter-bg">Peržiūrėti</button></a>
-                </div>
-                <img class="car_slide" src="images/car2.jpeg" alt="Car2">
-            </div>
-            <div class="slide slide-right">
-                <div class="slide-content">
-                    <a href="#"><button type="button" class="s-btn--scooter-bg">Peržiūrėti</button></a>
-                </div>
-                <img class="car_slide" src="images/car3.jpeg" alt="Car3">
-            </div>
-            <div class="slide slide-left">
-                <div class="slide-content">
-                    <a href="#"><button type="button" class="s-btn--scooter-bg">Peržiūrėti</button></a>
-                </div>
-                <img class="car_slide" src="images/car4.jpeg" alt="Car4">
-            </div>
-            <div class="slide slide-bottom">
-                <div class="slide-content">
-                    <a href="#"><button type="button" class="s-btn--scooter-bg">Peržiūrėti</button></a>
-                </div>
-                <img class="car_slide" src="images/car5.jpeg" alt="Car5">
-            </div>
-            <div class="slide slide-right">
-                <div class="slide-content">
-                    <a href="#"><button type="button" class="s-btn--scooter-bg">Peržiūrėti</button></a>
-                </div>
-                <img class="car_slide" src="images/car6.jpeg" alt="Car6">
+        <div class="container">
+            <h1>Automobilio informacija</h1>
+            
+            <div class="car-info">
+                <h2>Automobilio modelis: BMW 535</h2>
+                <img src="images/car1.jpeg" alt="Toyota Camry">
+                <p>Metai: 2011</p>
+                <p>Spalva: Balta</p>
+                <p>Variklis: 3L</p>
+                <p>Pavarų dėžė: Automatinė</p>
+                <p>Kuro tipas: Benzinas</p>
+                
+                <button id="reservationButton">Rezervuoti automobilį</button>
             </div>
         </div>
-        </div>
-      </main>
-      <!-- End Main -->
-
+    </main>
+    <!-- End Main -->
+</div>
+<!-- Reservation Modal -->
+<div id="reservationModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeReservationModal()">&times;</span>
+      <h2>Rezervacija</h2>
+      <form id="reservationForm">
+        <label for="reservationDate">Pasirinkite rezervacijos datą:</label>
+        <input type="date" id="reservationDate" name="reservationDate" required>
+        
+        <label for="reservationTime">Pasirinkite rezervacijos laiką:</label>
+        <input type="time" id="reservationTime" name="reservationTime" required>
+        
+        <input type="submit" value="Rezervuoti">
+      </form>
     </div>
+</div>
+<!-- End Reservation Modal -->
 
-    <!-- Scripts -->
-    <!-- Custom JS -->
-    <script src="js/scripts.js"></script>
-  </body>
+  <!-- Scripts -->
+  <!-- Custom JS -->
+  <script src="js/scripts.js"></script>
+</body>
 </html>

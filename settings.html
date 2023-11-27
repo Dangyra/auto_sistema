@@ -86,54 +86,42 @@
 
       <!-- Main -->
       <main class="main-container">
-        <div class="car_options g-bg-color--something g-font-family--secondary" id="Cars">
-            <h3 class="display-3" style="padding: 0.5em;">Įmomės automobiliai</h3>
-        <div class="slide_car">
-            <div class="slide slide-left">
-                <div class="slide-content">
-                    <a href="/carsInfo.html" target="_self"><button type="button" class="s-btn--scooter-bg">Peržiūrėti</button></a>
-                </div>
-                <img class="car_slide" src="images/car1.jpeg" alt="Car1">
-            </div>
-            <div class="slide slide-top">
-                <div class="slide-content">
-                    <a href="#"><button type="button" class="s-btn--scooter-bg">Peržiūrėti</button></a>
-                </div>
-                <img class="car_slide" src="images/car2.jpeg" alt="Car2">
-            </div>
-            <div class="slide slide-right">
-                <div class="slide-content">
-                    <a href="#"><button type="button" class="s-btn--scooter-bg">Peržiūrėti</button></a>
-                </div>
-                <img class="car_slide" src="images/car3.jpeg" alt="Car3">
-            </div>
-            <div class="slide slide-left">
-                <div class="slide-content">
-                    <a href="#"><button type="button" class="s-btn--scooter-bg">Peržiūrėti</button></a>
-                </div>
-                <img class="car_slide" src="images/car4.jpeg" alt="Car4">
-            </div>
-            <div class="slide slide-bottom">
-                <div class="slide-content">
-                    <a href="#"><button type="button" class="s-btn--scooter-bg">Peržiūrėti</button></a>
-                </div>
-                <img class="car_slide" src="images/car5.jpeg" alt="Car5">
-            </div>
-            <div class="slide slide-right">
-                <div class="slide-content">
-                    <a href="#"><button type="button" class="s-btn--scooter-bg">Peržiūrėti</button></a>
-                </div>
-                <img class="car_slide" src="images/car6.jpeg" alt="Car6">
+        <div class="container">
+            <h1>Nustatymai</h1>
+            
+            <div class="settings">
+                <form action="#" method="post">
+                <label for="notifications">Pranešimai:</label>
+                <select id="notifications" name="notifications">
+                    <option value="on">Įjungti</option>
+                    <option value="off">Išjungti</option>
+                </select>
+
+                <label for="language">Kalba:</label>
+                <select id="language" name="language">
+                    <option value="english">Lietuvių</option>
+                    <option value="spanish">Anglų</option>
+                    <option value="french">Rusų</option>
+                    <!-- Add more language options as needed -->
+                </select>
+
+                <label for="theme">Puslapio spalva:</label>
+                <select id="theme" name="theme">
+                    <option value="light">Šviesi</option>
+                    <option value="dark">Tamsi</option>
+                </select>
+
+                <input type="submit" value="Išsaugoti">
+                </form>
             </div>
         </div>
-        </div>
-      </main>
-      <!-- End Main -->
+    </main>
+    <!-- End Main -->
 
-    </div>
+  </div>
 
-    <!-- Scripts -->
-    <!-- Custom JS -->
-    <script src="js/scripts.js"></script>
-  </body>
+  <!-- Scripts -->
+  <!-- Custom JS -->
+  <script src="js/scripts.js"></script>
+</body>
 </html>
