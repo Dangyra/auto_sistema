@@ -95,13 +95,56 @@
 
       <!-- Main -->
       <main class="main-container">
-        <div class="main-title">
-          <p class="font-weight-bold">DASHBOARD</p>
+        <div class="table">
+            <div class="table_section">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Markė</th>
+                            <th>Numeris</th>
+                            <th>Užimtumas</th>
+                            <th>Rezervuoti</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td ><a href="/carsInfo.html">Audi</a></td>
+                            <td>AAA111</td>
+                            <td></td>
+                            <td><button id="reservationButton">Rezervuoti automobilį</button></td>
+                        </tr>
+                        <tr>
+                            <td><a href="/carsInfo.html">BMW 535</a></td>
+                            <td>BBB222</td>
+                            <td></td>
+                            <td><button id="reservationButton">Rezervuoti automobilį</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
       </main>
       <!-- End Main -->
 
     </div>
+
+    <!-- Reservation Modal -->
+<div id="reservationModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeReservationModal()">&times;</span>
+      <h2>Rezervacija</h2>
+      <form id="reservationForm">
+        <label for="startDate">Pasirinkite rezervacijos pradžios datą:</label><br>
+        <input type="date" id="startDate" name="startDate" required>
+        <br>
+        <label for="endDate">Pasirinkite rezervacijos pabaigos datą:</label><br>
+        <input type="date" id="endDate" name="endDate" required>
+        <br><br>
+        <input type="submit" value="Rezervuoti">
+    </form>
+    </div>
+</div>
+<!-- End Reservation Modal -->
 
     <!-- Scripts -->
     <!-- Custom JS -->

@@ -563,3 +563,130 @@ h1 {
   float: right;
   cursor: pointer;
 }
+
+/* Login */
+.login-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-container {
+  width: 420px;
+  padding: 30px 40px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.login-form h2 {
+  text-align: center;
+}
+
+.input-box{
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border: 2px solid;
+  border-radius: 40px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.input-box i{
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.remember-forgot{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.remember-forgot label input{
+  margin-right: 3px;
+}
+
+.remember-forgot a{
+  text-decoration: none;
+}
+
+.remember-forgot a:hover{
+  text-decoration: underline;
+}
+
+.btn{
+  width: 100%;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 0px rgba(0,0,0,.1);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Table */
+.table{
+  width: 100%;
+  background-color: white;
+}
+
+table{
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+thead th{
+  position: sticky;
+  top: 0;
+  font-size: 15px;
+  background-color: #f6f9fc;
+  color: #8493a5;
+}
+
+th,td{
+  border-bottom: 1px solid #dddddd;
+  padding: 10px 20px;
+  word-break: break-all;
+  text-align: center;
+}
+
+tr:hover td{
+  color: #0298cf;
+  cursor: pointer;
+  background-color: #f6f9fc;
+}
+
+tr:hover a{
+  color: #0298cf;
+  cursor: pointer;
+  background-color: #f6f9fc;
+}
+
+/*Forgot password*/
+.forgot-password-container {
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.forgot-password-form h2 {
+  text-align: center;
+}

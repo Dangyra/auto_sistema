@@ -35,20 +35,24 @@
             </div>
     
             <div class="menu">
-                <ul>
-                    <li>
-                        <span class="material-icons-outlined">person</span>
-                        <a href="#">Redaguoti profilį</a>
-                    </li>
-                    <li>
-                        <span class="material-icons-outlined">settings</span>
-                        <a href="/settings.html">Nustatymai</a>
-                    </li>
-                    <li>
-                        <span class="material-icons-outlined">logout</span>
-                        <a href="#">Atsijungti</a>
-                    </li>
-                </ul>
+              <ul>
+                <li>
+                  <span class="material-icons-outlined">person</span>
+                  <a href="#">Redaguoti profilį</a>
+                </li>
+                <li>
+                  <span class="material-icons-outlined">settings</span>
+                  <a href="/settings.html">Nustatymai</a>
+                </li>
+                <li>
+                  <span class="material-icons-outlined">login</span>
+                  <a href="/login.html">Prisijungti</a>
+                </li>
+                <li>
+                  <span class="material-icons-outlined">logout</span>
+                  <a href="#">Atsijungti</a>
+                </li>
+            </ul>
             </div>
           </div>
         </div>
@@ -68,6 +72,11 @@
           <li class="sidebar-list-item">
             <a href="/index.html" target="_self">
               <span class="material-icons-outlined">dashboard</span> Dashboard
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="/carRental.html" target="_self">
+              <span class="material-icons-outlined">car_rental</span> Realaus laiko stebėsena
             </a>
           </li>
           <li class="sidebar-list-item">
@@ -97,30 +106,11 @@
                 <p>Variklis: 3L</p>
                 <p>Pavarų dėžė: Automatinė</p>
                 <p>Kuro tipas: Benzinas</p>
-                
-                <button id="reservationButton">Rezervuoti automobilį</button>
             </div>
         </div>
     </main>
     <!-- End Main -->
 </div>
-<!-- Reservation Modal -->
-<div id="reservationModal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeReservationModal()">&times;</span>
-      <h2>Rezervacija</h2>
-      <form id="reservationForm">
-        <label for="reservationDate">Pasirinkite rezervacijos datą:</label>
-        <input type="date" id="reservationDate" name="reservationDate" required>
-        
-        <label for="reservationTime">Pasirinkite rezervacijos laiką:</label>
-        <input type="time" id="reservationTime" name="reservationTime" required>
-        
-        <input type="submit" value="Rezervuoti">
-      </form>
-    </div>
-</div>
-<!-- End Reservation Modal -->
 
   <!-- Scripts -->
   <!-- Custom JS -->
